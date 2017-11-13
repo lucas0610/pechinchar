@@ -1,3 +1,8 @@
+
+  html {
+    font-family: GillSans, Calibri, Trebuchet, sans-serif;
+  }
+
 body {
   display: flex;
   min-height: 100vh;
@@ -8,8 +13,21 @@ main {
   flex: 1 0 auto;
 }
 
+#cabecalho{
+  background: rgba(3, 155, 229, 0.2);
+
+}
+#paral{
+ background: rgba(2, 136, 209, 0.5);
+}
+
+#teste{
+  opacity: 0.6;
+}
+
 .parallax-container {
   height: 700px;
+
 }
 
 .caption{
@@ -26,7 +44,23 @@ main {
   padding: 30px;
 }
 
+#carrinho{
+  position: relative;
+}
+#cofre{
+  position: relative;
+}
+#sacola{
+  position: relative;
+}
 #texto-2{
   margin-top: 30px;
   padding: 30px;
+}
+
+#sobre{
+  position: relative;
+}
+#contact{
+  position: relative;
 }

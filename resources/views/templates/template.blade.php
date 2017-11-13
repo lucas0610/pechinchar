@@ -11,21 +11,36 @@
 
    <body>
       @yield('content')
-       <nav class="transparent target">
+       <nav id="cabecalho" class="target">
           <div class="nav-wrapper container">
-            <a href="#" data-activates="mobile-demo" class="button-collapse"><i class="material-icons">menu</i></a>
+            <a href="#" data-activates="slide-out" class="button-collapse"><i class="material-icons">menu</i></a>
             <ul>
-              <li><i class="material-icons black-text">shopping_basket</i></li>
-              <li><a href="#" class="brand-logo black-text">Pechinchar</a></li>
+              <li><i class="material-icons  white-text hide-on-med-and-down">shopping_basket</i></li>
+              <li><a href="#" class="brand-logo white-text">Pechinchar</a></li>
             </ul>
 
             <ul id="nav-mobile" class="right left hide-on-med-and-down">
-              <li><a href="#" class="black-text">Login/Registre-se</a></li>
-              <li><a href="#"><i class="material-icons black-text">shopping_cart</i></a></li>
+              <li><a href="#" class=" white-text">Login/Registre-se</a></li>
+              <li><a href="#" data-activates="slide-out" class="collapse"><i class="material-icons white-text">shopping_cart</i></a></li>
+            </ul>
+            <ul id="slide-out" class="side-nav">
+                <li><div class="user-view">
+                  <div class="background">
+                    <img src="images/office.jpg">
+                  </div>
+                   <a href="#!user"><img class="circle" src="images/yuna.jpg"></a>
+                   <a href="#!name"><span class="black-text name">John Doe</span></a>
+                   <a href="#!email"><span class="black-text email">jdandturk@gmail.com</span></a>
+                 </div>
+               </li>
+                 <li><a href="#!"><i class="material-icons">cloud</i>First Link With Icon</a></li>
+                 <li><a href="#!">Second Link</a></li>
+                 <li><div class="divider"></div></li>
+                 <li><a class="subheader">Subheader</a></li>
+                 <li><a class="waves-effect" href="#!">Third Link With Waves</a></li>
             </ul>
           </div>
         </nav>
-
 
           <div class="grey darken-1">
             <div class="row">
@@ -80,10 +95,10 @@
           <div class="container">
             <div class="row">
               <div class="col s6">
-                <a href="#"><img src="img/sobre.png" alt=""></a>
+                <a href="#"><img id="sobre" src="img/sobre.png" alt=""></a>
               </div>
               <div class="col s6">
-                <a href="#"><img src="img/contato.png" alt=""></a>
+                <a href="#"><img id="contact" src="img/contato.png" alt=""></a>
               </div>
             </div>
           </div>
@@ -109,7 +124,7 @@
        $(document).ready(function(){
          $('.target').pushpin({
            top: 0,
-           bottom: 700,
+           bottom: 640,
            offset: 0
          });
        });
@@ -124,9 +139,12 @@
        $(document).ready(function(){
          $('.slider').slider();
        });
+
        $(document).ready(function(){
        $(".button-collapse").sideNav();
+       $(".collapse").sideNav();
        });
+
      </script>
    </body>
  </html>

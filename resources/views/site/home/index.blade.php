@@ -1,9 +1,9 @@
 @extends('templates.template')
 @section('content')
 
-  <div class="parallax-container" >
+  <div id="paral" class="parallax-container" >
     <div class="parallax">
-      <img class="responsive-img" src="img/teste.jpg">
+      <img id="teste" class="responsive-img" src="img/teste.jpg">
     </div>
     <div class="caption center-align">
        <h1 class="white-text"><strong>ECONOMIZE TEMPO E DINHEIRO</strong></h1>
@@ -11,6 +11,7 @@
        <a class="waves-effect waves btn ">CONSULTAR PRODUTOS</a>
      </div>
   </div>
+
 
 <div id="texto-1" class="center-align">
 <h3>DESCUBRA ONDE É MAIS ECONÔMICO <br>FAZER SUAS COMPRAS SEM SAIR DE CASA!</h3>
