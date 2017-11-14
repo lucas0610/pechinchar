@@ -22,7 +22,7 @@
              <a class="waves-effect waves btn ">CONSULTAR PRODUTOS</a>
           </div>
     </div>
-
+  <!--DIV PARA VERSÃO MOBILE -->
 <div id="texto-1" class="center-align">
 <h3>DESCUBRA ONDE É MAIS ECONÔMICO <br>FAZER SUAS COMPRAS SEM SAIR DE CASA!</h3>
 </div>
