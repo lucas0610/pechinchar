@@ -6,6 +6,7 @@
      <link type="text/css" rel="stylesheet" href="css/materialize.css"  media="screen,projection"/>
      <link rel="stylesheet" href="/css/style.css">
      <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+     <link href="https://fonts.googleapis.com/css?family=Raleway:700" rel="stylesheet">
      <title>Pechinchar</title>
    </head>
 
@@ -92,14 +93,14 @@
               </div>
             </div>
           </div>
-          <div class="container">
-            <div class="row">
-              <div class="col s6">
-                <a href="#"><img id="sobre" src="img/sobre.png" alt=""></a>
-              </div>
-              <div class="col s6">
-                <a href="#"><img id="contact" src="img/contato.png" alt=""></a>
-              </div>
+          <div class="container-css">
+            <div class="row-css">
+                <div class="col-css col-2">
+                  <a href="#"><img id="sobre" src="img/sobre.png" alt=""></a>
+                </div>
+                <div class="col-css col-2">
+                    <a href="#"><img id="contact" src="img/contato.png" alt=""></a>
+                </div>
             </div>
           </div>
 
